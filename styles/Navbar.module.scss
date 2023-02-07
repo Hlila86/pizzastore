@@ -1,0 +1,37 @@
+.container {
+    background-color: rgb(237, 243, 210);
+    height: 100px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+    .navmenu {
+        background-color: rgb(184, 53, 53);
+
+
+        .list {
+
+            display: flex;
+
+            .listItem{
+                margin: 20px;
+                list-style-type: none;
+            }
+      
+        }
+
+    }
+
+    .navright {
+        background-color: pink;
+        display: flex;
+
+    }
+} 
+
+.rightItem{
+            margin: 20px;
+        }
