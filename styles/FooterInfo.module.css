@@ -1,0 +1,27 @@
+.container{
+    background-color: #282828;
+    width: 100%;
+       padding: 20px 100px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: white;
+    
+}
+
+.icon{
+    font-size: 55px;
+    color: white;
+    
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
