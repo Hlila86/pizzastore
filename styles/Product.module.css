@@ -14,6 +14,8 @@ display: flex;
 .right{
     flex: 1;
     background-color: azure;
+    padding: 10px;
+
 }
 
 .imgContainer{
@@ -21,4 +23,70 @@ display: flex;
     width: 80%;
     height: 80%;
     background-color: aquamarine;
+}
+
+.price{
+    font-size: 35px;
+    font-weight: 500;
+    border-bottom: 1px solid #000000;
+}
+
+
+.sizes{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.size{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    border: 1px solid black;
+}
+
+.size:active{
+    background-color: #000000;
+    color: white;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.color{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.quantity{
+    width: 50px;
+    height: 30px;
+}
+
+.button{
+    height: 30px;
+    margin-left: 20px;
+    background-color: rgb(4, 77, 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
