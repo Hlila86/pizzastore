@@ -22,7 +22,10 @@ const Navbar = () => {
           <div className={styles.outlineMenu}>
             <AiOutlineMenu />
           </div>
+          <div className={styles.logo}>
           <Image src="/img/logo.webp" alt='' width={109} height={55} />
+
+          </div>
         </div>
 
         <div className={styles.navmenu}>
@@ -55,7 +58,11 @@ const Navbar = () => {
             <BiUser />
           </div>
           <div className={styles.cart}>
-            <AiOutlineShoppingCart />
+
+            <Link href="/cart">
+            <AiOutlineShoppingCart />           
+            </Link>
+
             <div className={styles.cartCount}>0</div>
           </div>
 
