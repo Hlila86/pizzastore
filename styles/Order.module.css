@@ -141,4 +141,9 @@
     .done , .inProgress , .undone{
         margin-bottom: 20px;
     }
+
+    .wrapper{
+        width: 100%;
+        
+    }
 }
