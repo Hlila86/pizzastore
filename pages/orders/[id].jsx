@@ -1,14 +1,25 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/Order.module.css'
-import {BsFillBagCheckFill} from 'react-icons/bs'
-import {MdLocalShipping} from 'react-icons/md'
-import {FaTruckLoading} from 'react-icons/fa'
-import {FcShipped} from 'react-icons/fc'
-import {FcPaid} from 'react-icons/fc'
+import { BsFillBagCheckFill } from 'react-icons/bs'
+import { MdLocalShipping } from 'react-icons/md'
+import { FaTruckLoading } from 'react-icons/fa'
+import { FcShipped } from 'react-icons/fc'
+import { FcPaid } from 'react-icons/fc'
 
 
 const Order = () => {
+
+const status=0; 
+
+const statusClass = (index) =>{
+    if(index - status <1 ) return styles.done
+    if(index - status === 1 ) return styles.inProgress
+    if(index - status >1 ) return styles.undone
+
+}
+
+
     return (
         <div className={styles.container}>
             <div className={styles.left}>
@@ -43,20 +54,23 @@ const Order = () => {
                     </table>
                 </div>
                 <div className={styles.row}>
-                    <div className={styles.status}>
-<BsFillBagCheckFill/>
+                    <div className={statusClass(0)}>
+                        <BsFillBagCheckFill />
+                        <span>Payement</span>
                     </div>
-                    <div className={styles.status}>
-<MdLocalShipping/>
+                    <div className={statusClass(1)}>
+                    <FaTruckLoading />
+
+                        <span>preparing </span>
                     </div>
-                    <div className={styles.status}>
-<FaTruckLoading/>
+
+                    <div className={statusClass(2)}>
+                        <MdLocalShipping />
+                        <span>livraison</span>
                     </div>
-                    <div className={styles.status}>
-<FcShipped/>
-                    </div>
-                    <div className={styles.status}>
-<FcPaid/>
+                    <div className={statusClass(3)}>
+                        <FcPaid />
+                        <span>Woslet !</span>
                     </div>
 
 

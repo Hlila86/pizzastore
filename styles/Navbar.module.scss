@@ -80,3 +80,14 @@
 .logo{
     cursor: pointer;
 }
+
+@media screen and (max-width:480px) {
+    .navright{
+        display: none;
+    }
+
+    .navmenu{
+        display: none;
+    }
+    
+}

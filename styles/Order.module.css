@@ -8,7 +8,7 @@
 
 .left {
     flex: 2;
-    background-color: brown;
+    background-color: rgb(240, 227, 227);
 }
 
 .right {
@@ -54,4 +54,45 @@
 
 .row{
     display: flex;
+    margin: 50px;
+}
+
+.row:last-child{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    color: green;
+    align-items: center;
+}
+
+.inProgress{
+    display: flex;
+    color: rgb(110, 110, 16);
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 0.8s ease infinite alternate;
+}
+
+@keyframes inProgress {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.undone{
+    display: flex;
+    color: rgb(122, 11, 11);
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
 }
