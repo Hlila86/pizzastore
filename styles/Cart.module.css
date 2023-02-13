@@ -1,31 +1,78 @@
-.container{
+.container {
     background-color: blueviolet;
     padding: 50px;
     display: flex;
+    height: 100vh;
 }
 
-.left{
+.left {
     flex: 2;
-background-color: rgb(219, 223, 24);
+    background-color: rgb(219, 223, 24);
 
 }
 
-.table{
-    background-color: blue;
-    width: 100%;
+.table {
+    background-color: rgb(255, 255, 255);
     border-spacing: 20px;
+    width: 100%;
+    text-align: left;
+    
 }
 
-.imgContainer{
+
+
+.name {
+    font-weight: 500;
+    color: brown;
+    font-size: 18px;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.imgContainer {
     width: 100px;
     height: 100px;
     position: relative;
 }
 
-.right{
+.right {
 
     flex: 1;
 
-background-color: brown;
+    background-color: brown;
 }
 
+.wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: #333;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.totalTextTitle {
+    margin-right: 10px;
+}
+
+.button {
+    width: 50%;
+    height: 3 0px;
+    color: rgb(190, 87, 87);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0px;
+}

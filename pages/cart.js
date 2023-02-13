@@ -7,10 +7,9 @@ const Cart = () => {
     <div className={styles.container}>
        <div className={styles.left}>
         
-        <h1>this is left</h1>
 
         <table className={styles.table}>
-    <tbody>
+    <tbody className={styles.tbody}>
       <tr className={styles.tr}>
         <th >Product</th>
         <th >Name</th>
@@ -51,7 +50,15 @@ const Cart = () => {
         </div>
 
         <div className={styles.right}>
-<h1>tis is right</h1>
+<div className={styles.wrapper}>
+  <h2 className={styles.title}>CART TOTAL</h2>
+  <div className={styles.totalText}> 
+    <b className={styles.totalTextTitle}>Total:</b>$79.5
+  </div>
+
+  <button className={styles.button}>CECKOUT NOW</button>
+
+</div>
         </div>
     </div>
   )
