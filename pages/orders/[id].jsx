@@ -26,7 +26,7 @@ const statusClass = (index) =>{
                 <div className={styles.row}>
                     <table className={styles.table}>
                         <tbody className={styles.tbody}>
-                            <tr className={styles.tr}>
+                            <tr className={styles.trTitle}>
                                 <th >Order ID</th>
                                 <th >Costumer</th>
 
@@ -34,7 +34,7 @@ const statusClass = (index) =>{
                                 <th >Total</th>
                             </tr>
 
-                            <tr>
+                            <tr className={styles.tr}>
 
                                 <td>
                                     <span className={styles.id}>154896213</span>

@@ -90,3 +90,29 @@ display: flex;
     cursor: pointer;
     font-weight: bold;
 }
+
+@media screen and (max-width:480px) {
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+
+    }
+
+    .imgContainer{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .sizes{
+        width: 80%;
+    }
+
+    .quantity , .button{
+        height: 50px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
